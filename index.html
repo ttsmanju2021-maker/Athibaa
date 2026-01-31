@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home | Herbalist</title>
+    <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+    <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+    <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/socialmedia.css">
+
+    <link rel="stylesheet" href="css/index.min.css" />
+    <style>
+        .logo-float {
+            display: inline-block;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .logo-float img {
+            width: 320px;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(139, 34, 52, 0.8));
+            animation: glow 2s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-float:hover img {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 10px rgba(139, 34, 52, 0.5));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 30px rgba(139, 34, 52, 1));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header d-flex flex-wrap align-items-center" data-page="home" data-overlay="true">
+        <div class="container d-flex flex-wrap flex-xl-nowrap align-items-center justify-content-between">
+            <a class="brand footer_main-about_brand d-flex align-items-center" href="index.html">
+                <span style="display: inline-block; position: relative; animation: float 3s ease-in-out infinite;">
+                    <img src="img/athibaa/logo-2.png" alt="Athibaa" style="width: 198px; filter: drop-shadow(0 0 20px rgba(139,34,52,0.8)); 
+                animation: glow 2s ease-in-out infinite;">
+                </span>
+
+            </a>
+            <nav class="header_nav">
+                <ul class="header_nav-list">
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#homeMenu" aria-expanded="false"
+                            aria-controls="homeMenu">
+                            Home
+                            <i class="icon-caret_down icon"></i>
+                        </a>
+                        <div class="dropdown-menu collapse" id="homeMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item nav-item" data-page="home">
+                                    <a class="dropdown-item" href="index.html">Home 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="home2">
+                                    <a class="dropdown-item" href="index2.html">Home 02</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#shopMenu" aria-expanded="false"
+                            aria-controls="shopMenu">
+                            Shop
+                            <i class="icon-caret_down icon"></i>
+                        </a>
+                        <div class="dropdown-menu collapse" id="shopMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item nav-item" data-page="shop">
+                                    <a class="dropdown-item" href="shop.html">Shop 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="shop2">
+                                    <a class="dropdown-item" href="shop2.html">Shop 02</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="product">
+                                    <a class="dropdown-item" href="product.html">Single Product 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="product2">
+                                    <a class="dropdown-item" href="product2.html">Single Product 02</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="compare">
+                                    <a class="dropdown-item" href="compare.html">Compare List</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#newsMenu" aria-expanded="false"
+                            aria-controls="newsMenu">
+                            News
+                            <i class="icon-caret_down icon"></i>
+                        </a>
+                        <div class="dropdown-menu collapse" id="newsMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item nav-item" data-page="news">
+                                    <a class="dropdown-item" href="news.html">News 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="news2">
+                                    <a class="dropdown-item" href="news2.html">News 02</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="post">
+                                    <a class="dropdown-item" href="post.html">Single Post 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="post2">
+                                    <a class="dropdown-item" href="post2.html">Single Post 02</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#pagesMenu" aria-expanded="false"
+                            aria-controls="pagesMenu">
+                            Pages
+                            <i class="icon-caret_down icon"></i>
+                        </a>
+                        <div class="dropdown-menu collapse" id="pagesMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item nav-item" data-page="about">
+                                    <a class="dropdown-item" href="about.html">About</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="team">
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="faq">
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="contacts">
+                                    <a class="dropdown-item" href="contacts.html">Contacts 01</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="contacts2">
+                                    <a class="dropdown-item" href="contacts2.html">Contacts 02</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="404">
+                                    <a class="dropdown-item" href="404.html">Error Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <span class="header_trigger d-inline-flex d-xl-none flex-column justify-content-between">
+                <span class="line line--short"></span>
+                <span class="line line"></span>
+                <span class="line line--short"></span>
+                <span class="line line"></span>
+            </span>
+            <div class="header_user d-flex justify-content-end align-items-center">
+                <form class="header_user-search" action="#" method="get" data-type="searchForm">
+                    <input class="header_user-search_field field required" type="text" placeholder="Search..." />
+                    <button
+                        class="header_user-search_btn header_user-action d-inline-flex align-items-center justify-content-center"
+                        type="submit" data-trigger="search">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+                <a class="header_user-action d-inline-flex align-items-center justify-content-center"
+                    href="wishlist.html">
+                    <i class="icon-heart"></i>
+                </a>
+                <a class="header_user-action d-inline-flex align-items-center justify-content-center"
+                    data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                    <i class="icon-basket"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Homepage content start -->
+    <main>
+        <!-- Hero section start -->
+        <section class="hero">
+            <div class="container d-xl-flex align-items-start">
+                <div class="hero_about col-xl-6">
+                    <div class="hero_header">
+                        <h1 class="hero_header-title">Premium Quality Incense Sticks Bulk & Wholesale Supply</h1>
+                        <p class="hero_header-text">
+                            Naturally crafted incense sticks made using traditional methods and premium ingredients.
+                            Ideal for wholesale buyers, distributors, temples, and retail brands.
+                        </p>
+                        <a class="hero_header-btn btn" href="shop.html">Our Bulk Products</a>
+                    </div>
+                    <div class="hero_contacts">
+                        <p class="hero_contacts-text">Our support team is available 24/7 for bulk orders & custom
+                            requirements
+                        </p>
+                        <span class="hero_contacts-data d-flex flex-column flex-sm-row align-items-center">
+                            <span class="icon d-flex align-items-center justify-content-center">
+                                <i class="icon-call"></i>
+                            </span>
+                            <span class="d-flex flex-column">
+                                <span>Phone number</span>
+                                <a class="link" href="tel:+91 8939963030">+91 8939963030</a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="hero_promo col-xl-6">
+                    <div class="hero_promo-underlay"></div>
+                    <div class="hero_promo-underlay--highlight"></div>
+                    <div class="hero_slider swiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                                <div class="hero_slider-slide_media">
+                                    <picture>
+                                        <img class="lazy" src="img/athibaa/bakthi 2.png" alt="logo"
+                                            style="margin-top: 250px; margin-left: -50px;">
+                                    </picture>
+
+                                </div>
+                                <div class="hero_slider-slide_main">
+                                    <h2 class="title">Natural Agarbatti Collection</h2>
+                                    <p class="text">
+                                        Smooth-burning incense sticks with long-lasting fragrance, perfect for daily
+                                        pooja and spiritual use.
+                                    </p>
+                                    <ul class="list">
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Handcrafted & machine-rolled options
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Long-lasting aroma
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Consistent quality in bulk supply
+                                        </li>
+                                    </ul>
+                                    <a class="btn--underline" href="#">About Product</a>
+                                    <p style="
+                                        margin-top:14px;
+                                        max-width:420px;
+                                        font-size:14px;
+                                        line-height:1.7;
+                                        color:#cfe5dc;
+                                        font-weight:400;
+                                    ">
+                                        Our incense sticks are crafted for bulk and wholesale supply using natural
+                                        ingredients,
+                                        ensuring consistent fragrance, smooth burning, and premium quality for temples,
+                                        retailers, and export markets.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div
+                                class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                                <div class="hero_slider-slide_media">
+                                    <picture class="incesne">
+                                        <img class="lazy" src="img/athibaa/bakthi 1.png" alt="logo"
+                                            style="width: 828px; margin-left: -99px; margin-top: 250px;">
+                                    </picture>
+                                </div>
+                                <div class="hero_slider-slide_main">
+                                    <h2 class="title">Premium Fragrance Series</h2>
+                                    <p class="text">
+                                        Expertly blended fragrances designed to create a calm, positive, and divine
+                                        atmosphere.
+                                    </p>
+                                    <ul class="list">
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Sandalwood, Rose, Lavender, Champa
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Custom fragrance development
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Export-quality standards
+                                        </li>
+                                    </ul>
+                                    <a class="btn--underline" href="#">About Product</a>
+                                    <p style="margin-top:14px; font-size:14px; line-height:1.7; color:#cfe5dc;">
+                                        Naturally crafted incense sticks ideal for daily pooja, temples, and spiritual
+                                        spaces in bulk quantities.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div
+                                class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                                <div class="hero_slider-slide_media">
+                                    <picture class="incesne">
+                                        <img class="lazy" src="img/athibaa/bakthi 3.png" alt="logo"
+                                            style="width: 569px; margin-top: 256px; margin-left: 43px;">
+                                    </picture>
+                                </div>
+                                <div class="hero_slider-slide_main">
+                                    <h2 class="title">Wholesale Incense Solutions</h2>
+                                    <p class="text">
+                                        Reliable bulk manufacturing with consistent quality, timely delivery, and
+                                        competitive pricing.
+                                    </p>
+                                    <ul class="list">
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Custom packaging & branding
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Large-scale production capacity
+                                        </li>
+                                        <li
+                                            class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                            <span class="icon d-flex align-items-center justify-content-center">
+                                                <i class="icon-check"></i>
+                                            </span>
+                                            Domestic & export supply
+                                        </li>
+                                    </ul>
+                                    <a class="btn--underline" href="#">About Product</a>
+                                    <p style="margin-top:14px; font-size:14px; line-height:1.7; color:#cfe5dc;">
+                                        Reliable bulk incense manufacturing with custom fragrances, packaging, and
+                                        private label support.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-pagination swiper-pagination d-sm-flex flex-column"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://wa.me/+91 8939963030" target="_blank" class="float-btn whatsapp-float float-bob-y"
+    aria-label="Chat on WhatsApp">
+</a>
+
+<a href="https://www.instagram.com/houseofathibaa/" target="_blank" class="float-btn instagram-float float-bob-y"
+    aria-label="Visit Instagram">
+</a>
+        <!-- Hero section end -->
+        <!-- Featured products section start -->
+        <section class="featured section--nopb">
+            <div class="container">
+                <div class="featured_header">
+                    <h2 class="featured_header-title">Premium Incense Stick Collection</h2>
+                    <p class="featured_header-text">
+                        Experience calm, positivity, and divine fragrance with our hand-crafted incense sticks. Made
+                        using natural ingredients, long-lasting aroma, and traditional methods.
+                    </p>
+                </div>
+                <div class="products_list d-grid">
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+
+                                        <img class="lazy preview" src="img/athibaa/athi-1.png" alt="Tangerine Dream" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star"><i class="icon-star_fill"></i></li>
+                                        <li class="main_rating-stars_star"><i class="icon-star_fill"></i></li>
+                                        <li class="main_rating-stars_star"><i class="icon-star_fill"></i></li>
+                                        <li class="main_rating-stars_star"><i class="icon-star_fill"></i></li>
+                                        <li class="main_rating-stars_star"><i class="icon-star"></i></li>
+                                    </ul>
+                                </div>
+
+                                <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                                    Tangerine Dream
+                                </a>
+
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Refreshing citrus fragrance that uplifts your mood and relaxes the mind.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;
+                                        "></div>
+
+
+                                <!-- <a class="btn btn--green" href="#">Add to Cart</a> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+                                        <img class="lazy preview" src="img/athibaa/athi-2.png" alt="Tangerine Dream" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="main_title" href="product.html" target="_blank"
+                                    rel="noopener norefferer">Champa Fragrance</a>
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Classic floral aroma with a soothing and spiritual feel.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;
+                                        "></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+                                        <img class="lazy preview" src="img/athibaa/athi-3.png" alt="High CBD 50 Oil" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="label">Sale</span>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="main_title" href="product.html" target="_blank"
+                                    rel="noopener norefferer">Sandal Musk
+                                </a>
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Rich sandalwood blended with soft musk notes.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;
+                                        "></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+                                        <img class="lazy preview" src="img/athibaa/athi-4.png"
+                                            alt="CBD Plus Formula Oil" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="label">Sale</span>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                                    Nag Champa</a>
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Traditional floral incense with a soothing and spiritual fragrance.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;
+                                        "></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+
+                                        <img class="lazy preview" src="img/athibaa/athi-5.png" alt="Tangerine Dream" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="label">Sale</span>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">Rose
+                                    Incense</a>
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Sweet and elegant rose fragrance that spreads positivity and freshness throughout
+                                    your space.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;
+                                        "></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products_list-item">
+                        <div class="products_list-item_wrapper d-flex flex-column">
+                            <div class="media">
+                                <a href="product.html" target="_blank" rel="noopener norefferer">
+                                    <picture>
+                                        <img class="lazy preview" src="img/athibaa/athi-6.png"
+                                            alt="Limelight (Ultra Sour)" />
+                                    </picture>
+                                </a>
+                                <div class="overlay d-flex justify-content-between align-items-start">
+                                    <div class="action d-flex flex-column">
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-trigger="compare">
+                                            <i class="icon-compare"></i>
+                                        </a>
+                                        <a class="action_link d-flex align-items-center justify-content-center" href="#"
+                                            data-role="wishlist">
+                                            <i class="icon-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main d-flex flex-column align-items-center justify-content-between">
+                                <div class="main_rating">
+                                    <ul
+                                        class="main_rating-stars d-flex align-items-center justify-content-center accent">
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                        <li class="main_rating-stars_star">
+                                            <i class="icon-star_fill"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="main_title" href="product.html" target="_blank"
+                                    rel="noopener norefferer">Lavender Bliss</a>
+                                <p style="
+                                      text-align: center;
+                                             color: #555;
+                                        font-size: 15px;
+                                       line-height: 1.8;
+                                         margin-bottom: 25px;
+                                           animation: fadeInUp 0.8s ease-out 0.4s both;
+                                             font-weight: 300;
+                                              ">
+                                    Gentle lavender aroma that calms the senses and helps reduce stress naturally.
+                                </p>
+                                <!-- Divider -->
+                                <div style="
+                                            width: 60px;
+                                            height: 2px;
+                                            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+                                            margin: 25px auto;
+                                            animation: fadeInUp 0.8s ease-out 0.5s both;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products_list-promo" style="
+    position: relative;
+    background: url(img/athibaa/athib-2-bg.png) center / cover no-repeat;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 40px rgba(47, 147, 101, 0.08);
+    overflow: hidden;
+">
+                        <!-- Decorative Background Overlay -->
+                        <span class="overlay" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(248, 253, 251, 0.85) 0%, rgba(255, 255, 255, 0.9) 100%);
+        pointer-events: none;
+        z-index: 1;
+    "></span>
+
+                        <div class="content" style="position: relative; z-index: 2;">
+                            <!-- Header with Icon -->
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                                <div style="
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(135deg, #2f9365 0%, #3aa876 100%);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 8px 20px rgba(47, 147, 101, 0.25);
+            ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                            fill="#FFD966" />
+                                    </svg>
+                                </div>
+                                <h3 class="products_list-promo_title" style="
+                font-size: 24px;
+                font-weight: 700;
+                color: #1a3a2e;
+                margin: 0;
+                line-height: 1.3;
+            ">Premium Incense Collection</h3>
+                            </div>
+
+                            <p class="products_list-promo_text" style="
+            font-size: 15px;
+            color: #5a6b63;
+            line-height: 1.7;
+            margin: 0 0 24px 0;
+        ">
+                                Handcrafted incense sticks made with natural ingredients to create a calming and divine
+                                atmosphere in your home.
+                            </p>
+
+                            <!-- Feature Points -->
+                            <div style="
+            margin-top: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        ">
+                                <!-- Point 1 -->
+                                <div style="
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 14px 16px;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                border-left: 3px solid #2f9365;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            ">
+                                    <div style="
+                    width: 22px;
+                    height: 22px;
+                    background: linear-gradient(135deg, #2f9365 0%, #3aa876 100%);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    margin-top: 1px;
+                ">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                            <path d="M20 6L9 17L4 12" stroke="#ffffff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p style="
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #2d4a3e;
+                    margin: 0;
+                    line-height: 1.6;
+                ">
+                                        Handcrafted premium incense made from <strong style="color: #2f9365;">100%
+                                            natural ingredients</strong>
+                                    </p>
+                                </div>
+
+                                <!-- Point 2 -->
+                                <div style="
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 14px 16px;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                border-left: 3px solid #2f9365;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            ">
+                                    <div style="
+                    width: 22px;
+                    height: 22px;
+                    background: linear-gradient(135deg, #2f9365 0%, #3aa876 100%);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    margin-top: 1px;
+                ">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                            <path d="M20 6L9 17L4 12" stroke="#ffffff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p style="
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #2d4a3e;
+                    margin: 0;
+                    line-height: 1.6;
+                ">
+                                        Perfect for <strong style="color: #2f9365;">daily pooja, meditation</strong> &
+                                        spiritual rituals
+                                    </p>
+                                </div>
+
+                                <!-- Point 3 -->
+                                <div style="
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 14px 16px;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                border-left: 3px solid #2f9365;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            ">
+                                    <div style="
+                    width: 22px;
+                    height: 22px;
+                    background: linear-gradient(135deg, #2f9365 0%, #3aa876 100%);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    margin-top: 1px;
+                ">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                            <path d="M20 6L9 17L4 12" stroke="#ffffff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p style="
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #2d4a3e;
+                    margin: 0;
+                    line-height: 1.6;
+                ">
+                                        <strong style="color: #2f9365;">Long-lasting aroma</strong> for a calm and
+                                        divine ambience
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Trust Badge -->
+                            <div style="
+            margin-top: 24px;
+            padding: 12px 18px;
+            background: linear-gradient(135deg, #fff8e7 0%, #fffef9 100%);
+            border: 1px solid #ffd966;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(255, 184, 77, 0.2);
+        ">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2L14.5 9.5L22 10L16.5 15L18 22.5L12 18.5L6 22.5L7.5 15L2 10L9.5 9.5L12 2Z"
+                                        fill="#FFB84D" />
+                                </svg>
+                                <span style="
+                font-size: 13px;
+                font-weight: 600;
+                color: #8B6914;
+                letter-spacing: 0.3px;
+            ">Trusted by 10,000+ Happy Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="featured_btn btn" href="shop.html">All Products</a>
+            </div>
+        </section>
+        <!-- Featured products section end -->
+        <!-- About section start -->
+        <section class="about section--nopb">
+            <div class="container">
+                <div class="about_main d-lg-flex justify-content-between">
+                    <div class="about_main-content col-lg-6 col-xl-auto">
+                        <h2 class="about_main-content_header">
+                            Experience the Art of Aromatherapy with Our Premium Incense Sticks
+                        </h2>
+                        <p class="about_main-content_text">
+                            Our carefully crafted incense sticks are designed to create calming and delightful
+                            experiences tailored to your preferences. Explore our wide range of fragrances and let our
+                            knowledgeable team help you find the perfect match for your space and mood.
+                        </p>
+                    </div>
+                    <div class="about_main-media">
+                        <picture>
+
+                            <img class="lazy" src="img/athibaa/athib-3-bg.png" alt="media" />
+                        </picture>
+                    </div>
+                </div>
+                <ul class="about_numbers d-flex flex-wrap">
+                    <li class="about_numbers-group col-sm-6 col-lg-3" data-order="1">
+                        <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                            <span class="countNum number d-flex align-items-center secondary" data-suffix="+"
+                                data-value="180">0</span>
+                            <p class="number-label">Fragrant varieties of incense sticks to explore</p>
+                        </div>
+                    </li>
+                    <li class="about_numbers-group col-sm-6 col-lg-3" data-order="2">
+                        <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                            <span class="countNum number d-flex align-items-center secondary" data-suffix="X"
+                                data-value="3">0</span>
+                            <p class="number-label">Longer burn time compared to standard sticks</p>
+                        </div>
+                    </li>
+                    <li class="about_numbers-group col-sm-6 col-lg-3" data-order="3">
+                        <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                            <span class="countNum number d-flex align-items-center secondary" data-suffix="%"
+                                data-value="100">0</span>
+                            <p class="number-label">Natural ingredients for safe and authentic aroma</p>
+                        </div>
+                    </li>
+                    <li class="about_numbers-group col-sm-6 col-lg-3" data-order="4">
+                        <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                            <span class="countNum number d-flex align-items-center secondary" data-suffix="K"
+                                data-value="11">0</span>
+                            <p class="number-label">Satisfied customers enjoying the calming scents</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- About section end -->
+        <!-- Product section start -->
+        <div class="product section">
+            <div class="container d-flex flex-column flex-lg-row">
+
+                <!-- Product Image -->
+                <div class="product_media">
+                    <picture>
+                        <img class="lazy" src="img/athibaa/orig-3.jpeg" alt="ATHIBAA Sandalwood Incense Cones" />
+                    </picture>
+                </div>
+
+                <!-- Product Content -->
+                <div class="product_main col-lg-6">
+
+                    <!-- Title -->
+                    <a class="product_main-title" href="product.html" target="_blank" rel="noopener norefferer">
+                        ATHIBAA Sandalwood Incense Cones
+                    </a>
+
+                    <!-- Rating -->
+                    <div class="product_main-rating d-flex align-items-center">
+                        <ul class="product_main-rating_stars d-flex align-items-center accent">
+                            <li class="star"><i class="icon-star_fill"></i></li>
+                            <li class="star"><i class="icon-star_fill"></i></li>
+                            <li class="star"><i class="icon-star_fill"></i></li>
+                            <li class="star"><i class="icon-star_fill"></i></li>
+                            <li class="star"><i class="icon-star_fill"></i></li>
+                        </ul>
+                        <a class="product_main-rating_amount" href="#">(12)</a>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="product_main-text">
+                        Experience the calming and divine fragrance of pure sandalwood with ATHIBAA
+                        Sandalwood Incense Cones. Made using natural ingredients, these cones are perfect
+                        for pooja, meditation, relaxation, and daily home fragrance.
+                    </p>
+
+                    <!-- Features -->
+                    <ul class="product_main-list">
+                        <li class="list-item d-flex align-items-center">
+                            <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                            Pure Sandalwood Aroma
+                        </li>
+                        <li class="list-item d-flex align-items-center">
+                            <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                            Long-Lasting Fragrance
+                        </li>
+                        <li class="list-item d-flex align-items-center">
+                            <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                            Ideal for Pooja & Meditation
+                        </li>
+                        <li class="list-item d-flex align-items-center">
+                            <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                            Made from Natural Ingredients
+                        </li>
+                    </ul>
+
+                    <!-- Price & Button -->
+                    <div class="product_main-action d-flex align-items-center">
+                        <span class="price">₹ 360</span>
+                        <a class="btn" href="#">Add to Cart</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Product section end -->
+
+        <!-- Effects section start  -->
+<section class="effects section--nopb">
+    <span class="effects_underlay">
+        <span class="effects_underlay-circle effects_underlay-circle--accent"></span>
+        <span class="effects_underlay-circle effects_underlay-circle--green"></span>
+    </span>
+
+    <div class="container d-md-flex flex-wrap flex-xxl-nowrap justify-content-between align-items-center">
+        <div class="effects_header d-lg-flex flex-xxl-column col-md-12 col-xxl-auto">
+            <div class="main col-lg-6 col-xl-12">
+                <h2 class="effects_header-title">
+                    Pure Fragrance Benefits of Natural Incense
+                </h2>
+
+                <p class="effects_header-text">
+                    Experience soothing aromas crafted with care. ATHIBAA incense sticks & cones
+                    fill your space with calming fragrance, perfect for prayer, meditation,
+                    and everyday relaxation.
+                </p>
+
+                <a class="effects_header-btn btn" href="shop.html">
+                    Our Incense Products
+                </a>
+            </div>
+
+            <span class="effects_header-formula col-lg-6 col-xl-12">
+                <!-- SVG NOT CHANGED -->
+                <svg width="281" height="157" viewBox="0 0 281 157" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG CONTENT SAME AS YOUR ORIGINAL -->
+                </svg>
+            </span>
+        </div>
+
+        <div class="effects_media">
+            <picture>
+                <img class="lazy" src="img/athibaa/orig-5.jpeg" alt="ATHIBAA Incense Sticks" />
+            </picture>
+        </div>
+
+        <ul class="effects_list col-xxl-4">
+            <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                data-aos="fade-up">
+                <span class="icon d-flex align-items-center justify-content-center">
+                    <i class="icon-flash"></i>
+                </span>
+                <div class="wrapper">
+                    <h4 class="effects_list-item_header">Calms Mind & Body</h4>
+                    <p class="effects_list-item_text">
+                        Gentle fragrance helps relieve stress, refresh the senses,
+                        and create a peaceful atmosphere at home.
+                    </p>
+                </div>
+            </li>
+
+            <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                data-aos="fade-up">
+                <span class="icon d-flex align-items-center justify-content-center">
+                    <i class="icon-heartbeat"></i>
+                </span>
+                <div class="wrapper">
+                    <h4 class="effects_list-item_header">Perfect for Pooja & Meditation</h4>
+                    <p class="effects_list-item_text">
+                        Ideal for daily prayers, meditation, and spiritual rituals
+                        with long-lasting and pleasant aroma.
+                    </p>
+                </div>
+            </li>
+
+            <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                data-aos="fade-up">
+                <span class="icon d-flex align-items-center justify-content-center">
+                    <i class="icon-head"></i>
+                </span>
+                <div class="wrapper">
+                    <h4 class="effects_list-item_header">Natural & Long-Lasting Fragrance</h4>
+                    <p class="effects_list-item_text">
+                        Crafted using quality ingredients to ensure smooth burning,
+                        rich smoke, and lasting fragrance.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Effects section end  -->
+
+        <!-- Latest news section start -->
+        <section class="latest section">
+            <div class="container">
+                <h2 class="latest_header">Latest News</h2>
+                <div class="latest_wrapper d-flex flex-column-reverse flex-lg-row">
+                    <div class="latest_promo" data-aos="fade-right">
+                        <picture>
+                            
+                            <img class="lazy latest_promo-bg" src="img/athibaa/athib-bg.png" alt="promo" />
+                        </picture>
+                        <div class="overlay d-flex d-sm-block flex-column justify-content-center">
+                            <h4 class="overlay_header">Buy Marijuana Seeds Online and Get a Gift</h4>
+                            <p class="overlay_text">
+                                Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat pulvinar proin
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="latest_list col-lg-7 col-xl-6">
+                        <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                            <span class="latest_list-preview">
+                                <picture>
+
+                                    <img class="lazy preview-img" data-src="img/placeholder.jpg"
+                                        src="img/placeholder.jpg" alt="Top 15 Best Strain Of Weed For Anxiety" />
+                                </picture>
+                            </span>
+                            <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                                <span class="metadata">
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-calendar_day icon secondary"></i>
+                                        September 30, 2021
+                                    </span>
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-comments icon secondary"></i>
+                                        <span class="number d-md-none">0</span>
+                                        <span class="text d-none d-md-inline">No Comments</span>
+                                    </span>
+                                </span>
+                                <a class="title" href="post.html">Top 15 Best Strain Of Weed For Anxiety</a>
+                                <p class="text">
+                                    Felis eget velit aliquet sagittis id consectetur. Eleifend donec pretium vulputate
+                                    sapien nec
+                                    sagittis
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                            <span class="latest_list-preview">
+                                <picture>
+
+                                    <img class="lazy preview-img" data-src="img/placeholder.jpg"
+                                        src="img/placeholder.jpg" alt="Raw Cannabis Seeds Promote Health" />
+                                </picture>
+                            </span>
+                            <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                                <span class="metadata">
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-calendar_day icon secondary"></i>
+                                        September 30, 2021
+                                    </span>
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-comments icon secondary"></i>
+                                        <span class="number d-md-none">0</span>
+                                        <span class="text d-none d-md-inline">No Comments</span>
+                                    </span>
+                                </span>
+                                <a class="title" href="post.html">Raw Cannabis Seeds Promote Health</a>
+                                <p class="text">
+                                    Felis eget velit aliquet sagittis id consectetur. Eleifend donec pretium vulputate
+                                    sapien nec
+                                    sagittis
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                            <span class="latest_list-preview">
+                                <picture>
+
+                                    <img class="lazy preview-img" data-src="img/placeholder.jpg"
+                                        src="img/placeholder.jpg" alt="How Many Autoflowers In a Tent?" />
+                                </picture>
+                            </span>
+                            <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                                <span class="metadata">
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-calendar_day icon secondary"></i>
+                                        September 30, 2021
+                                    </span>
+                                    <span class="metadata_item d-inline-flex align-items-center">
+                                        <i class="icon-comments icon secondary"></i>
+                                        <span class="number d-md-none">0</span>
+                                        <span class="text d-none d-md-inline">No Comments</span>
+                                    </span>
+                                </span>
+                                <a class="title" href="post.html">How Many Autoflowers In a Tent?</a>
+                                <p class="text">
+                                    Felis eget velit aliquet sagittis id consectetur. Eleifend donec pretium vulputate
+                                    sapien nec
+                                    sagittis
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Latest news section end -->
+
+     <!-- Instagram section start -->
+<section class="instagram">
+    <div class="container">
+        <div class="instagram_header">
+            <h2 class="instagram_header-title">Follow Us on Instagram</h2>
+            <p class="instagram_header-text">
+                Premium incense stick manufacturing, packing & bulk supply.
+            </p>
+        </div>
+    </div>
+
+    <div class="instagram_slider swiper">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="instagram_slider-slide swiper-slide">
+                <a class="link"
+                   href="https://www.instagram.com/houseofathibaa/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <video autoplay muted loop playsinline
+                        poster="img/instagram/thumb-1.jpg"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <source src="img/athibaa/athi-vd.mp4" type="video/mp4">
+                    </video>
+
+                    <span class="overlay d-flex justify-content-center align-items-center">
+                        <i class="icon-instagram"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="instagram_slider-slide swiper-slide">
+                <a class="link"
+                   href="https://www.instagram.com/houseofathibaa/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <video autoplay muted loop playsinline
+                        poster="img/instagram/thumb-3.jpg"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <source src="img/athibaa/athi-vd-2.mp4" type="video/mp4">
+                    </video>
+
+                    <span class="overlay d-flex justify-content-center align-items-center">
+                        <i class="icon-instagram"></i>
+                    </span>
+                </a>
+            </div>
+
+              <div class="instagram_slider-slide swiper-slide">
+                <a class="link"
+                   href="https://www.instagram.com/houseofathibaa/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <video autoplay muted loop playsinline
+                        poster="img/instagram/thumb-1.jpg"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <source src="img/athibaa/athi-vd.mp4" type="video/mp4">
+                    </video>
+
+                    <span class="overlay d-flex justify-content-center align-items-center">
+                        <i class="icon-instagram"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="instagram_slider-slide swiper-slide">
+                <a class="link"
+                   href="https://www.instagram.com/houseofathibaa/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <video autoplay muted loop playsinline
+                        poster="img/instagram/thumb-3.jpg"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <source src="img/athibaa/athi-vd-2.mp4" type="video/mp4">
+                    </video>
+
+                    <span class="overlay d-flex justify-content-center align-items-center">
+                        <i class="icon-instagram"></i>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Instagram section end -->
+
+    </main>
+    <!-- Homepage content end -->
+    <footer class="footer">
+        <div class="footer_main section">
+            <div class="container d-flex flex-column flex-md-row flex-wrap flex-xl-nowrap justify-content-xl-between">
+                <div class="footer_main-about footer_main-block col-md-6 col-xl-auto">
+                    <a class="brand footer_main-about_brand d-flex align-items-center" href="index.html">
+                        <span class="logo">
+                            <svg width="48" height="45" viewBox="0 0 48 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#logoFooter)">
+                                    <circle cx="23.5" cy="23.4998" r="17.5" fill="#EFC368" />
+                                    <path
+                                        d="M9.79512 42.7418V42.7418C9.34023 42.4033 9.31895 41.6825 9.74864 41.1504L20.897 27.3735L21.6772 27.954L11.3571 42.3414C10.9578 42.9017 10.25 43.0802 9.79512 42.7418Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M26.6771 42.8479C24.3476 41.406 22.6473 39.3633 21.68 36.619C21.6593 36.5586 21.6359 36.5018 21.6151 36.4414C21.4922 39.036 20.3226 40.6907 20.2435 42.0699C19.132 40.0735 18.4588 38.1106 18.4647 36.206C18.1821 36.2953 17.9437 36.5019 17.8208 36.958C17.3874 35.131 17.6447 32.9512 18.3642 30.5317C18.3464 30.5407 18.3321 30.5524 18.317 30.5578C16.2065 31.901 14.1964 32.7376 12.3296 32.8201C12.7376 32.5789 12.8705 32.2927 12.875 31.9938C11.0458 32.5244 8.97337 32.4184 6.74791 31.9002C8.04923 31.4476 9.32012 29.8636 11.7803 29.0303C11.6909 29.0245 11.5988 29.0222 11.5182 29.0119C8.64916 28.8206 6.24349 27.758 4.23021 25.933C4.69937 26.0793 5.11342 26.0499 5.44359 25.7948C1.69403 23.2492 0.824471 20.6681 0.188852 18.0841C0.246001 18.1328 0.303978 18.1877 0.364647 18.239C2.42593 19.949 7.42129 20.651 12.0076 22.6794C11.9954 22.659 11.9796 22.6359 11.9709 22.6182C8.85487 17.65 8.34457 13.0834 9.54543 8.78741C9.58318 9.21335 9.74327 9.53553 10.0257 9.75395C11.6092 4.78897 13.794 2.1021 16.3564 0.847511C14.6956 3.40296 20.6028 11.3757 20.0354 18.9763C20.067 18.905 20.0933 18.8408 20.1285 18.7722C21.8813 14.7689 24.9437 11.1591 29.0134 7.86035C28.3949 8.82752 28.0996 9.53433 28.39 10.3354C31.404 6.98018 34.6553 4.90665 38.1701 4.24101C38.4991 7.80318 37.4021 11.5 35.0076 15.3221C35.8577 15.3804 36.4557 14.9017 37.2149 14.0407C35.1295 18.9466 32.4473 22.9381 29.0008 25.7322C29.1119 25.6872 29.2212 25.652 29.3359 25.6097C29.3421 25.6088 29.3448 25.6052 29.3537 25.6007C36.0383 23.3432 44.4319 26.1635 47.0271 24.609L47.0298 24.6054C47.1919 24.5148 47.3285 24.3994 47.444 24.2681C46.9443 27.0771 44.9637 29.9178 40.6276 32.8085C40.9181 33.0162 41.2754 33.084 41.6891 33.0038C37.8727 35.3512 33.3229 36.116 27.6566 34.4662C27.7021 34.5229 27.7477 34.5796 27.7924 34.6301C31.0172 38.5605 33.0746 43.2124 35.3315 44.5604C32.6759 44.6643 29.9551 44.5399 26.4711 41.6346C26.3186 42.0347 26.4036 42.4346 26.6771 42.8479Z"
+                                        fill="#258F67" />
+                                    <path
+                                        d="M21.6964 27.3339C21.6964 27.3339 16.6815 25.0813 12.6419 22.5125C9.405 17.4567 8.82341 12.8418 9.98562 8.52346C10.0299 8.95377 10.1971 9.28105 10.4873 9.50533C12.0295 4.51719 14.2143 1.83603 16.8028 0.605255C16.8064 0.60798 7.27498 14.1519 21.6964 27.3339Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M20.7347 26.7685C20.7347 26.7685 18.8112 24.2889 20.2761 18.3905C22.0786 14.3957 25.1468 10.758 29.1883 7.40349C28.563 8.37328 28.2585 9.07826 28.5221 9.86229C31.5371 6.47721 34.7524 4.352 38.1907 3.61065C30.819 11.8745 24.022 19.9355 20.7347 26.7685Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M46.9734 24.4342C38.3251 31.4347 29.6485 31.3625 20.9666 27.3752C22.7954 28.1005 26.1505 27.0664 29.4339 25.6238C29.44 25.6229 29.4427 25.6193 29.4516 25.6147C36.1028 23.294 44.3824 26.0159 46.9734 24.4342Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M35.7432 43.9906C28.1977 39.4093 22.5531 34.0408 20.9998 26.9998C20.9998 26.9998 24.4082 31.2641 28.0546 34.2607C31.3346 38.117 33.4955 42.6236 35.7432 43.9906Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M20.3668 41.3979C19.9237 36.5216 20.2623 31.7313 21.1995 26.9998C21.389 30.1599 21.57 33.3522 21.8533 36.069C21.8345 36.0107 21.8131 35.9559 21.7944 35.8976C21.6233 38.4267 20.4668 40.0586 20.3668 41.3979Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M18.8106 30.5696C16.6844 31.8631 14.6463 32.6483 12.7329 32.6764C13.1445 32.445 13.2725 32.1601 13.2683 31.8585C11.4067 32.3402 9.27681 32.172 6.97768 31.5834C12.1204 30.7173 16.9056 29.3275 21.2743 27.331C20.976 28.0954 19.9814 29.3077 18.8106 30.5696Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M20.9696 27.2397C20.732 27.2913 15.5252 28.3696 11.6631 29.0039C8.78877 28.8184 6.38068 27.7577 4.3675 25.9313C4.83726 26.0771 5.25222 26.0465 5.58362 25.7899C1.83231 23.2444 0.966829 20.6567 0.335772 18.0657C0.392925 18.1144 0.450895 18.1693 0.51157 18.2206C6.50769 23.538 13.1637 27.0346 20.9696 27.2397Z"
+                                        fill="#214842" />
+                                    <path
+                                        d="M22.2931 28.0032C21.7944 28.665 20.8543 28.7971 20.1924 28.2984C19.5306 27.7997 19.3985 26.8595 19.8972 26.1977C20.3959 25.5359 21.336 25.4038 21.9979 25.9025C22.6597 26.4012 22.7918 27.3413 22.2931 28.0032Z"
+                                        fill="#214842" />
+                                </g>
+                                <defs>
+                                    <clipPath id="logoFooter">
+                                        <rect width="48" height="45" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="accent">Athibaa</span>
+
+                    </a>
+                    <div class="footer_main-about_wrapper">
+                        <p class="text">
+                            Athibaa brings you premium quality incense sticks, dhoop cones and pooja products
+                            crafted from natural ingredients to create a calm, divine and refreshing atmosphere.
+                        </p>
+                        <ul class="socials d-flex align-items-center accent">
+                            <li class="list-item">
+                                <a class="link" href="https://facebook.com" target="_blank" rel="noopener norefferer">
+                                    <i class="icon-facebook icon"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="https://www.instagram.com/houseofathibaa/" target="_blank"
+                                    rel="noopener norefferer">
+                                    <i class="icon-instagram icon"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="https://twitter.com" target="_blank" rel="noopener norefferer">
+                                    <i class="icon-twitter icon"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener norefferer">
+                                    <i class="icon-whatsapp icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_main-contacts footer_main-block col-md-6 col-xl-auto">
+                    <h4 class="footer_main-contacts_header footer_main-header">Contacts information</h4>
+                    <ul class="footer_main-contacts_list">
+                        <li class="list-item d-flex align-items-center">
+                            <span class="icon d-flex justify-content-center align-items-center">
+                                <i class="icon-call"></i>
+                            </span>
+                            <div class="wrapper d-flex flex-column">
+                                <a class="link" href="tel:+919876543210">+91 98765 43210</a>
+                            </div>
+                        </li>
+                        <li class="list-item d-flex align-items-center">
+                            <span class="icon d-flex justify-content-center align-items-center">
+                                <i class="icon-location"></i>
+                            </span>
+                            <div class="wrapper d-flex flex-column">
+                                <span>No-2/389 a,VOC street,m.a.Nagar ,redhills,Chennai-52</span>
+
+                            </div>
+                        </li>
+                        <li class="list-item d-flex align-items-center">
+                            <span class="icon d-flex justify-content-center align-items-center">
+                                <i class="icon-clock"></i>
+                            </span>
+                            <div class="wrapper d-flex flex-column">
+                                <span>9:00 am to 5:00 pm</span>
+                                <span>Monday to Saturday</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_main-nav footer_main-block col-md-6 col-xl-auto">
+                    <h4 class="footer_main-nav_header footer_main-header">Our Products</h4>
+                    <ul class="footer_main-nav_list d-flex flex-wrap flex-md-column">
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="#">
+                                <i class="icon-caret_right accent icon"></i>
+                                Incense Sticks
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="#">
+                                <i class="icon-caret_right accent icon"></i>
+                                Dhoop Cones
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="#">
+                                <i class="icon-caret_right accent icon"></i>
+                                Sambrani Cups
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="#">
+                                <i class="icon-caret_right accent icon"></i>
+                                Pooja Essentials
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="#">
+                                <i class="icon-caret_right accent icon"></i>
+                                Shop All
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer_main-instagram footer_main-block col-md-6 col-xl-auto">
+                    <h4 class="footer_main-instagram_header footer_main-header">Instagram</h4>
+                    <ul class="footer_main-instagram_list d-grid">
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-1.webp" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-2.webp" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-3.webp" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-4.webp" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-5.jpg" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#" target="_blank" rel="noopener norefferer">
+                                <picture>
+
+                                    <img class="lazy preview" src="img/athibaa/dummy-6.webp" alt="instagram post" />
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_secondary">
+            <div
+                class="container d-flex flex-column-reverse flex-md-row justify-content-center justify-content-md-between align-items-md-center">
+                <p class="footer_secondary-copyright">
+                    Athibaa &copy;
+                    <span class="linebreak">All rights reserved Copyrights <span id="currentYear"></span></span>
+                </p>
+                <ul class="footer_secondary-list d-flex justify-content-center align-items-center">
+                    <p class="footer_secondary-copyright">
+                        Designed &copy; by
+                        <span class="linebreak">Trishul Tech Solutions <span id="currentYear"></span></span>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/common.min.js"></script>
+    <div class="cartOffcanvas offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="cartOffcanvas_header d-flex align-items-center justify-content-between">
+            <h2 class="cartOffcanvas_header-title" id="cartOffcanvasLabel">Cart</h2>
+            <button class="cartOffcanvas_header-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="icon-close"></i>
+            </button>
+        </div>
+        <div class="cartOffcanvas_body">
+            <ul class="cartOffcanvas_body-list">
+                <li class="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                    <div class="media">
+                        <a href="product.html" target="_blank" rel="noopener norefferer">
+                            <picture>
+
+                                <img class="lazy" src="img/placeholder.jpg" alt="media" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                        <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                            <span class="main_title-product"> Jonny Chronic - French Macaroon </span>
+                        </a>
+                        <div class="main_price">
+                            <span class="price">$14.98</span>
+                        </div>
+                        <div class="qty d-flex align-items-center justify-content-between">
+                            <span class="qty_minus control disabled d-flex align-items-center">
+                                <i class="icon-minus"></i>
+                            </span>
+                            <input class="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                            <span class="qty_plus control d-flex align-items-center">
+                                <i class="icon-plus"></i>
+                            </span>
+                        </div>
+                        <a class="btn--underline" href="#">Remove</a>
+                    </div>
+                </li>
+                <li class="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                    <div class="media">
+                        <a href="product.html" target="_blank" rel="noopener norefferer">
+                            <picture>
+
+                                <img class="lazy" src="img/placeholder.jpg" alt="media" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                        <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                            <span class="main_title-product"> House Shatter – Durban Poison </span>
+                        </a>
+                        <div class="main_price">
+                            <span class="price">$6.96</span>
+                        </div>
+                        <div class="qty d-flex align-items-center justify-content-between">
+                            <span class="qty_minus control disabled d-flex align-items-center">
+                                <i class="icon-minus"></i>
+                            </span>
+                            <input class="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                            <span class="qty_plus control d-flex align-items-center">
+                                <i class="icon-plus"></i>
+                            </span>
+                        </div>
+                        <a class="btn--underline" href="#">Remove</a>
+                    </div>
+                </li>
+                <li class="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                    <div class="media">
+                        <a href="product.html" target="_blank" rel="noopener norefferer">
+                            <picture>
+
+                                <img class="lazy" src="img/placeholder.jpg" alt="media" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                        <a class="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                            <span class="main_title-product"> Natures: CBD Tincture </span>
+                        </a>
+                        <div class="main_price">
+                            <span class="price">$7.49</span>
+                        </div>
+                        <div class="qty d-flex align-items-center justify-content-between">
+                            <span class="qty_minus control disabled d-flex align-items-center">
+                                <i class="icon-minus"></i>
+                            </span>
+                            <input class="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                            <span class="qty_plus control d-flex align-items-center">
+                                <i class="icon-plus"></i>
+                            </span>
+                        </div>
+                        <a class="btn--underline" href="#">Remove</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="cartOffcanvas_body-total d-flex justify-content-between align-items-center">
+                <span>Total</span>
+                <span class="cartTotal">$29.43</span>
+            </div>
+            <a class="cartOffcanvas_body-btn btn" href="cart.html">Proceed to checkout</a>
+        </div>
+    </div>
+    <script src="js/index.min.js"></script>
+</body>
+
+</html>
