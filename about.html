@@ -53,11 +53,25 @@
                 filter: drop-shadow(0 0 30px rgba(139, 34, 52, 1));
             }
         }
+  
+ @media (max-width: 767px) {
+            .header_user {
+                display: none !important;
+            }
+        }
+
         @media (max-width: 767px) {
-    .header_user {
-        display: none !important;
-    }
-}
+            .footer_main-about_brand img {
+                width: 180px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer_main-about_brand img {
+                width: 160px !important;
+                margin-top: -11px;
+            }
+        }
 
         </style>
     </head>
