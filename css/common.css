@@ -198,5 +198,7 @@
 @media (min-width: 1025px) {
     .nav-list {
         justify-content: flex-end;
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

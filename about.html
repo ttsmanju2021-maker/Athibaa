@@ -88,27 +88,34 @@
 
             </a>
                <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-list__item" data-page="product2">
-                        <a class="nav-list__link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-list__item" data-page="product2">
-                        <a class="nav-list__link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-list__item" data-page="product2">
-                        <a class="nav-list__link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-list__item" data-page="product2">
-                        <a class="nav-list__link" href="contacts.html">Contact</a>
-                    </li>
-                </ul>
+                <div class="nav-container">
+                   
+
+                    <!-- Desktop Menu -->
+                    <ul class="nav-list">
+                        <li class="nav-list__item" data-page="product2">
+                            <a class="nav-list__link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-list__item" data-page="product2">
+                            <a class="nav-list__link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-list__item" data-page="product2">
+                            <a class="nav-list__link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-list__item" data-page="product2">
+                            <a class="nav-list__link" href="contacts.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Mobile Hamburger Toggle -->
+                    <span class="header_trigger" id="menuToggle">
+                        <span class="line line--short"></span>
+                        <span class="line"></span>
+                        <span class="line line--short"></span>
+                        <span class="line"></span>
+                    </span>
+                </div>
             </nav>
-                <span class="header_trigger d-inline-flex d-xl-none flex-column justify-content-between">
-                    <span class="line line--short"></span>
-                    <span class="line line"></span>
-                    <span class="line line--short"></span>
-                    <span class="line line"></span>
-                </span>
                 <div class="header_user d-flex justify-content-end align-items-center">
                     <form class="header_user-search" action="#" method="get" data-type="searchForm">
                         <input class="header_user-search_field field required" type="text" placeholder="Search..." />
@@ -1453,5 +1460,40 @@
                 <a class="cartOffcanvas_body-btn btn" href="cart.html">Proceed to checkout</a>
             </div>
         </div>
+         <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menuToggle');
+            const navList = document.querySelector('.nav-list');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    navList.classList.toggle('active');
+                });
+            }
+
+            // Close menu when clicking on a link (mobile)
+            const navLinks = document.querySelectorAll('.nav-list__link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 768) {
+                        menuToggle.classList.remove('active');
+                        navList.classList.remove('active');
+                    }
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInside = document.querySelector('.main-nav').contains(event.target);
+
+                if (!isClickInside && navList.classList.contains('active')) {
+                    menuToggle.classList.remove('active');
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    </script>
     </body>
 </html>
