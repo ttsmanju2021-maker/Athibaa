@@ -1377,9 +1377,10 @@ a[href^="https://maps.google.com/maps"] {
 
 .products_list-item_wrapper .media img {
     position: relative;
-    max-height: 90%;
+    /* max-height: 90%; */
     width: 90%;
-    margin: auto
+    margin: auto;
+    height: 62vh;
 }
 
 .products_list-item_wrapper .media .label {
